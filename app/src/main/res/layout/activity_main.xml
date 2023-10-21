@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#716150"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+
+    <!-- The title of the app is below -->
+
+
+    <!-- CLASSICAL MUSIC -->
+
+    <TextView
+        android:id="@+id/minutework"
+        android:layout_width="348dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="48dp"
+        android:contentDescription="@string/the_title_of_the_app_where_it_says_minute_work"
+        android:fontFamily="monospace"
+        android:text="@string/minuteworks"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/classicalbutton"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/button_background"
+        android:contentDescription="@string/classical_music_button"
+        app:layout_constraintBottom_toTopOf="@+id/lofibutton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/button_background" />
+
+    <ImageView
+        android:id="@+id/violin"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/classicalbutton"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/classicalbutton"
+        app:layout_constraintTop_toTopOf="@+id/classicalbutton"
+        app:srcCompat="@drawable/violin_icon"
+        android:contentDescription="@string/classical" />
+    <TextView
+        android:id="@+id/classicaltext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/classical"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/violin"
+        app:layout_constraintStart_toStartOf="@+id/violin"
+        app:layout_constraintTop_toBottomOf="@+id/violin" />
+
+
+    <!-- BINAURAL MUSIC -->
+
+    <ImageButton
+        android:id="@+id/binauralbutton"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/button_background"
+        android:contentDescription="@string/binaural_music_button"
+        app:layout_constraintBottom_toTopOf="@+id/naturebutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/classicalbutton"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/button_background" />
+
+    <ImageView
+        android:id="@+id/brain"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/binauralbutton"
+        app:layout_constraintStart_toStartOf="@+id/binauralbutton"
+        app:layout_constraintTop_toTopOf="@+id/binauralbutton"
+        app:srcCompat="@drawable/brain_icon"
+        android:contentDescription="@string/binaural_beats"/>
+    <TextView
+        android:id="@+id/binauraltext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/binaural_beats"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/brain"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="@+id/brain"
+        app:layout_constraintTop_toBottomOf="@+id/brain" />
+
+
+    <!-- LO-FI MUSIC -->
+
+    <ImageButton
+        android:id="@+id/lofibutton"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="68dp"
+        android:background="@drawable/button_background"
+        android:contentDescription="@string/lofi_music_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/button_background" />
+
+    <ImageView
+        android:id="@+id/headphone"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/lofibutton"
+        app:layout_constraintStart_toStartOf="@+id/lofibutton"
+        app:layout_constraintTop_toTopOf="@+id/lofibutton"
+        app:srcCompat="@drawable/headphones"
+        android:contentDescription="@string/violin"/>
+    <TextView
+        android:id="@+id/lofitext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/lo_fi"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/headphone"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="@+id/headphone"
+        app:layout_constraintTop_toBottomOf="@+id/headphone" />
+
+
+    <!-- NATURE MUSIC -->
+
+    <ImageButton
+        android:id="@+id/naturebutton"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="68dp"
+        android:background="@drawable/button_background"
+        android:contentDescription="@string/nature_music_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/lofibutton"
+        app:srcCompat="@drawable/button_background" />
+
+    <ImageView
+        android:id="@+id/tree"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/tree"
+        app:layout_constraintEnd_toEndOf="@+id/naturebutton"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="@+id/naturebutton"
+        app:layout_constraintTop_toTopOf="@+id/naturebutton"
+        app:srcCompat="@drawable/tree_icon" />
+    <TextView
+        android:id="@+id/naturetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/nature"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/tree"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="@+id/tree"
+        app:layout_constraintTop_toBottomOf="@+id/tree" />
+
+    <!-- no clue -->
+
+    <ImageButton
+        android:id="@+id/displaypanel"
+        android:layout_width="329dp"
+        android:layout_height="173dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/button_background"
+        android:contentDescription="@string/emojidisplaypanel"
+        app:layout_constraintBottom_toTopOf="@+id/classicalbutton"
+        app:layout_constraintEnd_toEndOf="@+id/minutework"
+        app:layout_constraintHorizontal_bias="0.631"
+        app:layout_constraintStart_toStartOf="@+id/minutework"
+        app:srcCompat="@drawable/button_background" />
+
+    <TextView
+        android:id="@+id/encouragement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_strong"
+        android:textColor="#FFFEFE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/minutework"
+        android:contentDescription="@string/encourgemen"/>
+
+    <ImageView
+        android:id="@+id/loved"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="@string/you_start_strong_and_end_stronger"
+        app:layout_constraintBottom_toTopOf="@+id/choosemood"
+        app:layout_constraintEnd_toEndOf="@+id/displaypanel"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/displaypanel"
+        app:srcCompat="@drawable/smile__1_" />
+
+    <TextView
+        android:id="@+id/choosemood"
+        android:layout_width="325dp"
+        android:layout_height="27dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="That smile looks amazing on you!"
+        android:textAlignment="center"
+        android:textColor="#FDFBFB"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/displaypanel"
+        app:layout_constraintEnd_toEndOf="@+id/displaypanel"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="@+id/displaypanel" />
+
+    <ImageView
+        android:id="@+id/menuicon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="18dp"
+        android:contentDescription="@string/menu_dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_menu_24" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
