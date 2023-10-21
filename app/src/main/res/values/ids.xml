@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="animals" type="id" />
+    <item name="rarenatures" type="id" />
+    <item name="jokes" type="id" />
+    <item name="affirmations" type="id" />
+</resources>

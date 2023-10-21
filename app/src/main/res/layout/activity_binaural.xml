@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#716150"
+    tools:context=".binaural">
+    <!-- big display of the image and the button -->
+
+    <!-- big display of the image and the button -->
+
+    <!-- text+wave -->
+
+    <!-- text+wave -->
+
+    <!-- forward+backward -->
+
+    <TextView
+        android:id="@+id/listenbinauralbeats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:fontFamily="monospace"
+        android:text="@string/listening_to_binaural_beats"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/wave2"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:contentDescription="@string/waveimage"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton"
+        app:layout_constraintEnd_toEndOf="@+id/listenbinauralbeats"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/listenbinauralbeats"
+        app:layout_constraintTop_toBottomOf="@+id/listenbinauralbeats"
+        app:layout_constraintVertical_bias="0.56"
+        app:srcCompat="@drawable/baseline_graphic_eq_24" />
+
+    <ImageView
+        android:id="@+id/forward2"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:layout_constraintBottom_toBottomOf="@+id/playbutton2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/playbutton2"
+        app:layout_constraintTop_toTopOf="@+id/playbutton2"
+        app:srcCompat="@drawable/baseline_skip_next_24"
+        android:contentDescription="@string/forwardbutton"/>
+    <ImageView
+        android:id="@+id/backward2"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/playbutton2"
+        app:layout_constraintEnd_toStartOf="@+id/playbutton2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/playbutton2"
+        app:srcCompat="@drawable/baseline_skip_previous_24"
+        android:contentDescription="@string/backwardbutton"/>
+    <!-- forward+backward -->
+
+    <!-- play+seekbar -->
+
+    <ImageView
+        android:id="@+id/playbutton2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="28dp"
+        android:contentDescription="@string/playbutton"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar2"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton"
+        app:layout_constraintStart_toStartOf="@+id/imageButton"
+        app:srcCompat="@drawable/baseline_play_circle_24" />
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        android:layout_width="330dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="@color/black"
+        android:progress="40"
+        android:progressTint="@color/white"
+        android:thumbTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/button_background"
+        app:layout_constraintBottom_toTopOf="@+id/playbutton2"
+        app:layout_constraintEnd_toEndOf="@+id/listenbinauralbeats"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="@+id/listenbinauralbeats"
+        app:srcCompat="@drawable/button_background" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton"
+        app:layout_constraintStart_toStartOf="@+id/imageButton"
+        app:layout_constraintTop_toTopOf="@+id/imageButton"
+        app:srcCompat="@drawable/brain_icon" />
+
+    <TextView
+        android:id="@+id/timeStampleft2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="76dp"
+        android:text="00:00"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/seekBar2" />
+
+    <TextView
+        android:id="@+id/timeStampright2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="76dp"
+        android:text="00:00"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/seekBar2" />
+
+    <!-- play+seekbar -->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
